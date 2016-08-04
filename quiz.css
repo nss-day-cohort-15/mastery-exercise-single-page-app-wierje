@@ -1,0 +1,40 @@
+body {
+  background-color:aliceblue;
+  font-family: roboto, sans-serif;
+}
+
+.col-md-4 {
+
+}
+.car_0 {
+  border: 2px solid silver;
+  width: 300px;
+  height: 300px;
+  margin-top: 60px;
+  padding: 15px;
+}
+
+.car_1 {
+  border: 2px solid blue;
+  width: 300px;
+  height: 300px;
+  margin-top: 60px;
+  padding: 15px;
+}
+
+.car_2 {
+  border: 2px solid red;
+  width: 300px;
+  height: 300px;
+  margin-top: 60px;
+  padding: 15px;
+}
+li {
+  list-style: none;
+}
+img {
+  height: 100px;
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px
+}

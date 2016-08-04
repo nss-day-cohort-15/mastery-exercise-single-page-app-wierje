@@ -1,0 +1,33 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Maxima",
+      "year": "2012",
+      "price": "15900",
+      "color": "Silver",
+      "purchased": false,
+      "description": "This is an immaculate 2012 Nissan Maxima with only 25000 miles on it. Leather seats, power everything."
+    },
+
+    {
+      "make": "Lotus",
+      "model": "Elise",
+      "year": "2005",
+      "price": "39800",
+      "color": "Blue",
+      "purchased": false,
+      "description": "Proud to present this truly exceptional 1-owner 2005 LOTUS ELISE colored in Nightfall Blue Metallic over black leather interior"
+    },
+
+    {
+      "make": "Tesla",
+      "model": "Model S",
+      "year": "2014",
+      "price": "59500",
+      "color": "Red",
+      "purchased": false,
+      "description": "85 kWh Battery, 265 miles range (EPA), 5.4 seconds 0-60 mph."
+    }
+  ]
+}
