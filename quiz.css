@@ -3,38 +3,54 @@ body {
   font-family: roboto, sans-serif;
 }
 
-.col-md-4 {
-
+.header {
+  width:  100%;
+  margin-bottom: 60px;
 }
-.car_0 {
-  border: 2px solid silver;
-  width: 300px;
-  height: 300px;
-  margin-top: 60px;
+
+#carCard0 {
+  width: 260px;
+  height: 400px;
+  margin: 60 auto;
   padding: 15px;
+  border: 2px solid silver;
+  text-align: left;
+}
+
+#carCard1 {
+  width: 260px;
+  height: 400px;
+  margin: 60 auto;
+  padding: 15px;
+  border: 2px solid blue;
+  text-align: left;
+}
+
+#carCard2 {
+  width: 260px;
+  height: 400px;
+  margin: 60 auto;
+  padding: 15px;
+  border: 2px solid red;
+  text-align: left;
+}
+
+.car_0 {
 }
 
 .car_1 {
-  border: 2px solid blue;
-  width: 300px;
-  height: 300px;
-  margin-top: 60px;
-  padding: 15px;
 }
 
 .car_2 {
-  border: 2px solid red;
-  width: 300px;
-  height: 300px;
-  margin-top: 60px;
-  padding: 15px;
 }
+
 li {
   list-style: none;
 }
 img {
-  height: 100px;
+  height: 120px;
+  margin: 15px;
   float: right;
-  margin-left: 15px;
-  margin-bottom: 15px
+  /* margin-left: 15px; */
+  /* margin-bottom: 15px */
 }

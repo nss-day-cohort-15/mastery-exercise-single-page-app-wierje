@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="container">
-
+    <div class="header">
       <div class="page-header">
         <h1>Car inventory   <small>Current listings</small></h1>
       </div>
@@ -16,35 +16,50 @@
       1. A text input field.
       1. A button.
       -->
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Text input">
-        </div>
-        <button type="submit" class="btn btn-default">Enter</button>
-      </form>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">
-            <ul class="car_0">
-              <img src="/img/2012-Nissan-Maxima-SV.jpg">
-            </ul>
+
+        <!-- <form class="navbar-form navbar-left" role="search"> -->
+          <div class="form-group">
+            <input id="edit" type="text" class="form-control" placeholder="Text input">
           </div>
-          <div class="col-md-4">
-            <ul class="car_1">
-            <img src="/img/lotus.jpg">
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="car_2">
-            <img src="/img/2014-Tesla-Model-S-red-colour-pictures.jpg">
-            </ul>
-          </div>
-        </div>
+          <button type="submit" class="btn btn-default">Enter</button>
+        <!-- </form> -->
       </div>
+    </div>
+    <div class="container">
+      <!-- <div class="container-fluid"> -->
+      <div class="row">
+
+        <div class="col-md-4">
+          <article id="carCard0">
+              <img src="/img/2012-Nissan-Maxima-SV.jpg">
+            <ul class="car_0">
+            </ul>
+          </article>
+        </div>
+<!--  -->
+        <div class="col-md-4">
+          <article id="carCard1">
+            <img src="/img/lotus.jpg">
+            <ul class="car_1">
+            </ul>
+          </article>
+        </div>
+<!--  -->
+        <div class="col-md-4">
+          <article id="carCard2">
+            <img src="/img/2014-Tesla-Model-S-red-colour-pictures.jpg">
+            <ul class="car_2">
+            </ul>
+          </article>
+        </div>
+        <!--  -->
+      </div>
+        <!-- </div> -->
     </div>
     <!-- <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     -->
     <script src="quiz.js"></script>
     <script src="quiz-xhr.js"></script>
+    <script src="change.js"></script>
   </body>
 </html>
