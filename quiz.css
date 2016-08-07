@@ -8,7 +8,7 @@ body {
   margin-bottom: 60px;
 }
 
-#carCard0 {
+.carCard {
   width: 260px;
   height: 400px;
   margin: 60 auto;
@@ -17,7 +17,7 @@ body {
   text-align: left;
 }
 
-#carCard1 {
+/* #carCard1 {
   width: 260px;
   height: 400px;
   margin: 60 auto;
@@ -34,7 +34,7 @@ body {
   border: 2px solid red;
   text-align: left;
 }
-
+ */
 .car_0 {
 }
 

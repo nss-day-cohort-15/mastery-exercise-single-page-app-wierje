@@ -1,27 +1,32 @@
-var Carlot = (function() {
-    var carInventory = [];
+function populatePage(carInventory) {
+      // console.log()
+var row = document.querySelector('#firstRow');
+      carInventory.forEach(function (car) {
+        row.innerHTML +=
 
-    return {
-        getCarInventory: function(callback) {
-            // create an xhr to load carInventory
-            var xhr = new XMLHttpRequest();
+      `
+      <div class = 'col-md-4 carCard'>
+           <img>img: ${car.img}</img>;
+           <p>Make: ${car.make}</p>;
+           <p>Year: ${car.year}</p>;
+           <p>Model: ${car.model}</p>;
+           <p>Price: $${car.price}</p>;
+           <p>Color: ${car.color}</p>;
+           <p>${car.description}</p>;
+      </div>
+      `
+        // console.log(car);
+    })
+}
 
-// Listen for when the load event is broadcast
-// and execute an anonymous callback.
-            xhr.open("GET", 'inventory.json');
-            xhr.addEventListener("load", function(event) {
-                // Set the value of the private array
-                // List the cars in the DOM
-                // Parse JSON objects into a native JavaScript Object
-                carInventory = JSON.parse(event.target.responseText).cars;
-                // carInventory = JSON.parse(this.responseText);
+Carlot.getCarInventory(populatePage);
 
-                console.log(carInventory);
-                callback(carInventory);
-            });
-            xhr.send();
-        }
-    }
-}) ();
 
-// Carlot.getCarInventory();
+
+
+// var newDiv = document.createElement('div');
+        //     newDiv.className ='col-md-4 carCard';
+        //     console.log('newDiv', newDiv);
+        // var newArticle = document.createElement('article');
+        // var newUl = document.createElement('ul');
+      // newDiv = document.querySelector(.car_${index});
