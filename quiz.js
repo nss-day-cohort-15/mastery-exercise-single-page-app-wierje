@@ -1,18 +1,21 @@
+
+
+
 function populatePage(carInventory) {
-      // console.log()
-var row = document.querySelector('#firstRow');
-      carInventory.forEach(function (car) {
-        row.innerHTML +=
+  console.log('2', carInventory)
+var populate = document.querySelector('#output');
+      carInventory.forEach(function (car, index) {
+        populate.innerHTML +=
 
       `
       <div class = 'col-md-4 carCard'>
-           <img>img: ${car.img}</img>;
-           <p>Make: ${car.make}</p>;
-           <p>Year: ${car.year}</p>;
-           <p>Model: ${car.model}</p>;
-           <p>Price: $${car.price}</p>;
-           <p>Color: ${car.color}</p>;
-           <p>${car.description}</p>;
+           <img src="${car.img}">
+           <p>Make: ${car.make}</p>
+           <p>Year: ${car.year}</p>
+           <p>Model: ${car.model}</p>
+           <p>Price: $${car.price}</p>
+           <p>Color: ${car.color}</p>
+           <p>${car.description}</p>
       </div>
       `
         // console.log(car);
@@ -30,3 +33,7 @@ Carlot.getCarInventory(populatePage);
         // var newArticle = document.createElement('article');
         // var newUl = document.createElement('ul');
       // newDiv = document.querySelector(.car_${index});
+
+       // document.addEventListener("DOMContentLoaded", function(event) {
+ //    console.log("DOM fully loaded and parsed");
+ //  });

@@ -3,6 +3,7 @@ var Carlot = (function() {
 
     return {
         getCarInventory: function(callback) {
+            console.log('1', callback)
             // create an xhr to load carInventory
             var carLoader = new XMLHttpRequest();
 
