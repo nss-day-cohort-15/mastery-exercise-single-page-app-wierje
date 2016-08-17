@@ -3,10 +3,9 @@ var Carlot = (function() {
 
     return {
         getCarInventory: function(callback) {
-            console.log('1', callback)
+            console.log('test', callback)
             // create an xhr to load carInventory
             var carLoader = new XMLHttpRequest();
-
 // Listen for when the load event is broadcast
 // and execute an anonymous callback.
             carLoader.open("GET", 'inventory.json');
@@ -14,9 +13,8 @@ var Carlot = (function() {
                 // Set the value of the private array
                 // List the cars in the DOM
                 // Parse JSON objects into a native JavaScript Object
-                carInventory = JSON.parse(event.target.responseText).cars;
-                // carInventory = JSON.parse(this.responseText);
-
+                // carInventory = JSON.parse(event.target.responseText).cars;
+                carInventory = JSON.parse(this.responseText).cars;
                 console.log(carInventory);
                 callback(carInventory);
             });
@@ -25,4 +23,3 @@ var Carlot = (function() {
     }
 }) ();
 
-// Carlot.getCarInventory();
