@@ -9,7 +9,7 @@
             }
 
             results += `
-        <div class='col-md-4 carCard' style='border-color: ${car.color}'>
+        <div class='col-md-4 carCard'style='border-color: ${car.color}'>
            <img src='${car.img}'>
            <h5>Make: ${car.make}</h5>
            <h5>Year: ${car.year}</h5>
