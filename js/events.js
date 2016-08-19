@@ -1,3 +1,5 @@
+'use strict';
+
 // (
 
 //  When you click on one of the car elements, change the width of the border to a higher value, and change the background color to any other color of your choosing.
@@ -29,25 +31,23 @@
 
 
 //  Also, on click of the car element, clear the value of the text input in the navbar, and put the [cursor in the text input](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus).
+var cardStyle = require('./style');
 
-
-Carlot = (function(carlot) {
-  carlot.activateEvents = function(){
-    var cards = document.querySelectorAll('.carCard')
+var activateEvents = function(){
+    var cards = document.querySelectorAll('.carCard');
     console.log(cards);
     cards.forEach(function(card) {
       card.addEventListener('click', function(){
         var userInput = document.querySelectorAll('#userInput');
         userInput.value='';
         userInput.focus();
-        Carlot.resetCards(cards);
-        Carlot.transform(card, orange);
-        Carlot.mirrorText(card, userInput);
-      })
-    })
-  }
+        cardStyle.resetCards(cards);
+        cardStyle.transform(card, orange);
+        cardStyle.mirrorText(card, userInput);
+      });
+    });
+  };
+module.exports = activateEvents;
 
-    return carlot
 
 
-} )(Carlot);
