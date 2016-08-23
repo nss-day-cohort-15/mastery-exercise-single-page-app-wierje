@@ -1,5 +1,5 @@
 body {
-  background-color:aliceblue;
+  background-color: aliceblue;
   font-family: roboto, sans-serif;
 }
 
@@ -13,29 +13,14 @@ body {
   height: 400px;
   margin: 60 auto;
   padding: 15px;
-  border: 2px solid silver;
+  border: 2px solid;
   text-align: left;
+  background-color: #FFF7F0;
 }
 
-/* #carCard1 {
-  width: 260px;
-  height: 400px;
-  margin: 60 auto;
-  padding: 15px;
-  border: 2px solid blue;
-  text-align: left;
-}
-
-#carCard2 {
-  width: 260px;
-  height: 400px;
-  margin: 60 auto;
-  padding: 15px;
-  border: 2px solid red;
-  text-align: left;
-}
- */
-.car_0 {
+.orange {
+  width: 300px;
+  background-color: lightgray;
 }
 
 .car_1 {

@@ -1,39 +1,37 @@
-
+(function() {
 
 
 function populatePage(carInventory) {
-  console.log('2', carInventory)
-var populate = document.querySelector('#output');
+  // console.log('2', carInventory)
+  var populate = document.querySelector('#output');
+  var results = "";
       carInventory.forEach(function (car, index) {
-        populate.innerHTML +=
+        if (index % 3 === 0) {
+          results += `<div class='row'>`
+        }
 
-      `
-      <div class = 'col-md-4 carCard'>
+        results += `
+        <div class = 'col-md-4 carCard' style="border-color: ${car.color}">
            <img src="${car.img}">
-           <p>Make: ${car.make}</p>
-           <p>Year: ${car.year}</p>
-           <p>Model: ${car.model}</p>
-           <p>Price: $${car.price}</p>
-           <p>Color: ${car.color}</p>
+           <h5>Make: ${car.make}</h5>
+           <h5>Year: ${car.year}</h5>
+           <h5>Model: ${car.model}</h5>
+           <h5>Price: $${car.price}</h5>
+           <h5>Color: ${car.color}</h5>
            <p>${car.description}</p>
-      </div>
+        </div>
       `
-        // console.log(car);
+        if (index % 3 === 2) {
+          results += `</div>`
+        }
     })
-}
-
+      populate.innerHTML = results};
+      // events.js
 Carlot.getCarInventory(populatePage);
+} () );
 
 
 
 
-// var newDiv = document.createElement('div');
-        //     newDiv.className ='col-md-4 carCard';
-        //     console.log('newDiv', newDiv);
-        // var newArticle = document.createElement('article');
-        // var newUl = document.createElement('ul');
-      // newDiv = document.querySelector(.car_${index});
 
-       // document.addEventListener("DOMContentLoaded", function(event) {
- //    console.log("DOM fully loaded and parsed");
- //  });
+
