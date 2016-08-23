@@ -1,6 +1,7 @@
 {
   "cars": [
     {
+      "img": "/img/2012-Nissan-Maxima-SV.jpg",
       "make": "Nissan",
       "model": "Maxima",
       "year": "2012",
@@ -11,6 +12,7 @@
     },
 
     {
+      "img": "/img/lotus.jpg",
       "make": "Lotus",
       "model": "Elise",
       "year": "2005",
@@ -21,6 +23,7 @@
     },
 
     {
+      "img": "img/2014-Tesla-Model-S-red-colour-pictures.jpg",
       "make": "Tesla",
       "model": "Model S",
       "year": "2014",
